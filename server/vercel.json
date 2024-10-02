@@ -6,12 +6,6 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ],
   "redirects": [
     {
       "source": "/",
@@ -34,6 +28,10 @@
       ],
       "destination": "/linktree/66fd208365ef0921740c7fc6",
       "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
     }
   ],
   "env": {
