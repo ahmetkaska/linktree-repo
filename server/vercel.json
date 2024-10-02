@@ -6,32 +6,10 @@
       "use": "@vercel/node"
     }
   ],
-  "redirects": [
+  "routes": [
     {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "link.mbd.ae"
-        }
-      ],
-      "destination": "/linktree/66fd224c65ef0921740c7ffe",
-      "permanent": false
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "link.mbdtravel.ae"
-        }
-      ],
-      "destination": "/linktree/66fd208365ef0921740c7fc6",
-      "permanent": false
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/"
+      "src": "/(.*)",
+      "dest": "/"
     }
   ],
   "env": {
