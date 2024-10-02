@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Düzeltilmiş API endpoint'i
-const apiEndpoint = 'http://localhost:5000/linktree/';
+const apiEndpoint = 'https://linktree-last-version-server.vercel.app/linktree/';
 export const fetchLinktree = async () => await axios.get(apiEndpoint);
 
 export const fetchSingleLinktree = async (id) => await axios.get(`${apiEndpoint}${id}`);
