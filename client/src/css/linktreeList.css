@@ -1,0 +1,52 @@
+.linktree-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Kartları sola hizalamak için */
+    gap: 16px;
+    padding: 0 16px; /* Dış boşluk */
+    width: 60%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linktree-item {
+    flex: 1 1 calc(33.333% - 16px); /* Üç kolonlu düzen */
+    margin-bottom: 16px;
+    max-width: 374px; /* Kartların genişliğini sınırla */
+    box-sizing: border-box; /* Dışarı taşmaları engelle */
+}
+
+.no-linktrees {
+    width: 100%;
+    text-align: center;
+}
+
+/* Tablet görünümünde iki kolon */
+@media screen and (max-width: 1624px) {
+    .linktree-item {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+/* Küçük tablet ve büyük telefon görünümünde tek kolon */
+@media screen and (max-width: 1268px) {
+    .linktree-item {
+        flex: 1 1 calc(100% - 16px);
+    }
+}
+
+/* Mobil cihazlar için düzen */
+@media screen and (max-width: 480px) {
+    .linktree-container {
+        width: 80%;
+        flex-direction: column;
+        padding: 0 8px; /* Mobilde padding azaltıldı */
+    }
+
+    .linktree-item {
+        width: 100%; /* Mobilde kartlar tam genişlikte */
+        margin-bottom: 12px;
+    }
+}
+

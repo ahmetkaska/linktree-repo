@@ -1,0 +1,553 @@
+/* Poppins Font Ekleme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Genel Stil */
+body {
+  font-family: 'Poppins', sans-serif;
+  /* Tüm yazılar için Poppins fontu */
+}
+
+.linktreeDetails-container {
+  width: 30%;
+  margin: 1% auto;
+  padding: 5px;
+  background-color: #ffffff;
+  /* Beyaz arkaplan */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+
+.title-container h2 {
+  font-size: 1.5rem;
+  color: #2a2a2a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-top: 2%;
+
+}
+
+
+/* Logo ve Slogan */
+.logo-container img {
+  max-width: 120px;
+  /* Logo boyutu */
+  border-radius: 50%;
+  /* Yuvarlak logo */
+}
+
+.slogan-container h2 {
+  font-size: 1.5rem;
+  color: #2a2a2a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
+}
+
+
+/* Sosyal Medya İkonları */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.icon-row img {
+  width: 20%;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Butonlar */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.button-container button {
+  display: block !important;
+  width: 95%;
+  padding: 15px;
+  font-size: 1rem;
+  background-color: white;
+  color: #2a2a2a;
+  border: 1px none #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 6px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+.button-container button:hover {
+  background-color: aliceblue;
+}
+
+/* Resim Grid Yapısı */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 0.8fr);
+  grid-gap: 4px!important;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  max-width: 100%;
+  height: auto;
+  /* Resim genişliği optimize edildi */
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.02);
+  /* Hover animasyonu */
+}
+
+
+
+
+/* Responsive Tasarım */
+@media (max-width: 1200px) {
+  .linktreeDetails-container {
+    width: 50%;
+  }
+
+  .button-container button {
+    padding: 12px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .image-grid img {
+    max-width: 250px;
+    /* Daha küçük ekranlar için genişlik */
+  }
+}
+
+@media (max-width: 768px) {
+  .linktreeDetails-container {
+    width: 100%;
+  }
+
+  .logo-container img {
+    max-width: 100px;
+    /* Küçük cihazlar için logo boyutu */
+  }
+
+  .icon-row img {
+    width: 30%;
+    height: auto;
+  }
+
+  .button-container button {
+    padding: 10px;
+    font-size: 0.9rem;
+    width: 80%;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    /* 2 sütun yapısı */
+  }
+
+  .image-grid img {
+    max-width: 200px;
+    /* Küçük cihazlar için resim genişliği */
+  }
+
+  .btned-cont {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .slogan-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .icon-row {
+    gap: 10px;
+  }
+
+  .icon-row img {
+    width: 12.5%;
+    height: auto;
+  }
+
+  .button-container button {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* Mobilde 1 sütun */
+    width: 80%;
+    grid-gap: 8px;
+  }
+
+  .image-grid img {
+    max-width: 100%;
+    /* Mobilde genişlik tam olacak şekilde */
+  }
+}
+
+/* Edit ve Delete Butonları */
+.btned-cont {
+  display: flex;
+  justify-content: flex-end;
+position: absolute;
+right: 2%;
+top: 8%;
+}
+
+.edit-button,
+.delete-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: aliceblue;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+
+  .btned-cont {
+    display: none;
+  }
+}
+
+
+#menuToggle {
+  display: none;
+}
+
+.btn-createLinktree {
+  display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+  #menuToggle {
+    display: block !important;
+    position: relative ;
+    margin-top: 2%;
+    right: -45%;
+  }
+
+
+  .btn-createLinktree {
+    display: none !important;
+  }
+
+  .btn-details {
+    display: none !important;
+  }
+
+  
+
+
+  #menuToggle {
+    display: block;
+    z-index: 1000;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1000;
+  }
+
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 2;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
+  }
+
+  #menuToggle input:checked~span {
+    background: #232323;
+  }
+
+  #menuToggle input:checked~span:nth-last-child(3) {
+    transform: rotate(45deg) translate(-2px, -1px);
+  }
+
+  #menuToggle input:checked~span:nth-last-child(2) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked~span:nth-last-child(1) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh !important;
+    width: 250px;
+    margin: 0;
+    padding: 50px;
+    padding-top: 125px;
+    background: aliceblue;
+    list-style-type: none;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+  }
+
+  #menuToggle input:checked~ul {
+    transform: translateX(0);
+  }
+
+  #menuToggle ul {
+    height: auto;
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    color: #007bff;
+  }
+
+
+  .container {
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .title .logo {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+  }
+
+ 
+
+  .btn-createLinktree {
+    border: 1px solid #333;
+    background-color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+
+  hr {
+    margin: 8px 0;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .title .logo {
+      color: #007bff;
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 5768px) {
+  #menuToggle {
+    display: flex !important;
+    flex-direction: column;
+    position: relative !important;
+    margin-left: auto;
+    position: absolute!important;
+    right: 3%;
+    top: 2%;
+  }
+
+
+  
+
+  .btn-details {
+    display: none !important;
+  }
+
+  
+
+  #menuToggle {
+    display: block;
+    z-index: 1000;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1000;
+  }
+
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 2;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
+  }
+
+  #menuToggle input:checked~span {
+    background: #232323;
+  }
+
+  #menuToggle input:checked~span:nth-last-child(3) {
+    transform: rotate(45deg) translate(-2px, -1px);
+  }
+
+  #menuToggle input:checked~span:nth-last-child(2) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked~span:nth-last-child(1) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh !important;
+    width: 250px;
+    margin: 0;
+    padding: 50px;
+    padding-top: 125px;
+    background: aliceblue;
+    list-style-type: none;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+  }
+
+  #menuToggle input:checked~ul {
+    transform: translateX(0);
+  }
+
+  #menuToggle ul {
+    height: auto;
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    color: #007bff;
+  }
+
+
+  .container {
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .title .logo {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+  }
+
+ 
+
+  hr {
+    margin: 8px 0;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .title .logo {
+      color: #007bff;
+    }
+
+  }
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+#menuToggle {
+  display: none;
+}
+.btned-cont{
+  display: none;
+}
+
+li{
+  cursor: pointer;
+}
+
+ul{
+  text-align: start;
+}

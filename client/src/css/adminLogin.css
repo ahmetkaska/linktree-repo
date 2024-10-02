@@ -1,0 +1,84 @@
+/* Container styles */
+.container-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 50%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 15%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Title styles */
+.title {
+    margin-bottom: 24px;
+    font-size: 26px;
+   
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Input styles */
+.input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+.button {
+    width: 50%;
+    padding: 12px;
+    background-color:white; 
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: aliceblue;
+}
+
+/* Error message styles */
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container-admin {
+        
+        width: 85%;
+        padding: 16px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .input, .button {
+        padding: 10px;
+    }
+}

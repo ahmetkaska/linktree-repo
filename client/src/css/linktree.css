@@ -1,0 +1,165 @@
+/* Card Layout */
+.card {
+    width: 100%; /* Full width by default */
+    max-width: 374px; /* Set max-width for desktop */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* Card Media */
+.card-media {
+    height: 0;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Overlay for admin and time */
+.overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    color: #2a2a2a;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.overlay h6 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Card Content */
+.card-content {
+    padding: 16px;
+    background-color: inherit; /* Inherit card background color */
+    flex-grow: 1;
+}
+
+.card-content h6 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+.card-content .link {
+    font-size: 14px;
+    color: #2a2a2a;
+    text-decoration: none;
+    word-break: break-all;
+    margin-top: 8px;
+}
+
+.card-content .link:hover {
+    text-decoration: underline;
+}
+
+/* Card Actions (More Link) */
+.card-actions {
+    padding: 16px;
+    background-color: inherit; /* Inherit background */
+    text-align: left;
+}
+
+.more-link {
+    color: #007bff!important;    
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+  
+}
+
+/* Responsive Design */
+
+/* For mobile screens */
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+        height: auto; /* Flexible height for content on mobile */
+        margin-bottom: 15px;
+    }
+
+    .overlay {
+        top: 8px;
+        left: 8px;
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    .card-content h6 {
+        font-size: 16px; /* Smaller text for mobile */
+    }
+
+    .more-link {
+        font-size: 14px;
+    }
+}
+
+/* For tablets and medium devices */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .card {
+        width: 100%;
+       /* max-width: 48%; /* Allow two cards side by side */
+    }
+
+    .overlay {
+        font-size: 13px;
+    }
+
+    .card-content h6 {
+        font-size: 18px;
+    }
+
+    .more-link {
+        font-size: 13px;
+    }
+}
+
+/* For large devices like laptops and desktops */
+@media screen and (min-width: 769px) {
+    .card {
+        max-width: 374px;
+    }
+
+    .overlay {
+        font-size: 14px;
+    }
+
+    .card-content h6 {
+        font-size: 20px; /* Larger text for desktops */
+    }
+
+    .more-link {
+        font-size: 14px;
+    }
+}
