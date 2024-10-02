@@ -12,6 +12,30 @@
       "dest": "/"
     }
   ],
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "link.mbd.ae"
+        }
+      ],
+      "destination": "/linktree/66fd224c65ef0921740c7ffe",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "link.mbdtravel.ae"
+        }
+      ],
+      "destination": "/linktree/66fd208365ef0921740c7fc6",
+      "permanent": false
+    }
+  ],
   "env": {
     "MONGODB_URI": "mongodb+srv://ahmetkaska36:36Kaska1905@linktrees-all-of-them.tkju7.mongodb.net/",
     "PORT": "5000"
