@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 app.use("/linktree", linktreeRoutes);
 
 
-const CONNECTION_URL = process.env.MONGODB_URI || "mongodb+srv://ahmetkaska36:36Kaska1905@linktrees-all-of-them.tkju7.mongodb.net/";
+const CONNECTION_URL = process.env.MONGODB_URI || "mongodb+srv://ahmetkaska36:36Kaska1905@testlinktree.q8zyo.mongodb.net/";
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, {
