@@ -21,7 +21,7 @@
           "value": "link.mbd.ae"
         }
       ],
-      "destination": "/linktree/66ff9760167be6dfa2c553c7",
+      "destination": "/linktree/67031381a89d09c6c00484bb",
       "permanent": false
     },
     {
@@ -32,12 +32,12 @@
           "value": "link.mbdtravel.ae"
         }
       ],
-      "destination": "/linktree/66feb0f192721285e12f2360",
+      "destination": "/linktree/6703172fa89d09c6c004853d",
       "permanent": false
     }
   ],
   "env": {
-    "MONGODB_URI": "mongodb+srv://ahmetkaska36:36Kaska1905@linktrees-all-of-them.tkju7.mongodb.net/",
+    "MONGODB_URI": "mongodb+srv://ahmetkaska36:36Kaska1905@testlinktree.q8zyo.mongodb.net/",
     "PORT": "5000"
   }
 }
